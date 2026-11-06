@@ -15,7 +15,7 @@ final class WheelPanel: NSPanel {
     private var dragStart: NSPoint?
     private var keyMonitor: Any?
     func applicationDidFinishLaunching(_ notification: Notification) {
-        preferences = UserDefaults(suiteName: Identity.bundleID)!
+        preferences = UserDefaults.standard
         model = LauncherModel(store: .standard())
         let frame = NSScreen.main?.visibleFrame ?? NSRect(x: 0, y: 0, width: 1024, height: 768)
         if preferences.object(forKey: "anchorX") != nil && preferences.object(forKey: "anchorY") != nil {
