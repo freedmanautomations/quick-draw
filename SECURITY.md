@@ -14,6 +14,6 @@ Use the repository's private vulnerability reporting feature when it is availabl
 
 ## Release status
 
-Version 0.1.0 is a preview with a local ad-hoc signature, not an Apple notarized installer. Do not weaken system security settings to open a downloaded preview. Public source can be built locally with Apple's tools.
+Version 0.1.0 is a preview with a local ad-hoc signature, not an Apple notarized installer. The first open of a downloaded copy needs the one-time **Open Anyway** approval for Quick Draw in System Settings > Privacy & Security, which allows only this app. Never turn off Gatekeeper or other system security settings to run it. Each release lists a SHA-256 checksum for its download. Public source can be built locally with Apple's tools instead.
 
 Automated checks cover validation, settings preservation, launch routing with isolated fixtures, source/archive inventory and native hidden-view rendering. A passing check is not a guarantee against every defect or a claim of testing every Mac, selected app, website or display configuration.
